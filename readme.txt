@@ -12,7 +12,8 @@ Gives a shorter url to media links in your media library.
 Adds a custom url rewrite to media files and expose these in the Media Library in WP-Admin.
 You can set your own unique tag-url to the media files and the MediaShort will listen to the ID of the image and redirect your visitors to the real url for the specific media file.
 
-Please use Twitter @ekandreas for contact regarding this plugin!
+Please use Twitter <a href="http://twitter.com/ekandreas" target="new">@ekandreas</a> for contact regarding this plugin!
+
 
 == Installation ==
 
