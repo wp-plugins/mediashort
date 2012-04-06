@@ -3,7 +3,7 @@ Contributors: EkAndreas
 Tags: media, short url, wp-admin
 Requires at least: 3.1
 Tested up to: 3.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 Gives a shorter url to media links in your media library.
 
@@ -23,12 +23,6 @@ How to install the plugin and get it working.
 3. Configure and make the function active via the option page under WP-Admin/Settings/MediaShort
 4. Make sure your site supports redirects as standard permalinks via .htaccess
 
-== Frequently Asked Questions ==
-
-= What about the Remove www? =
-
-If you host an enviroment that converts the url with or without www you can spare som chars to remove the www from the base urls of short media files.
-
 == Screenshots ==
 
 Screenshots
@@ -37,7 +31,17 @@ Screenshots
 3. Now test the file in your browser
 4. The redirect is complete!
 
+== Frequently Asked Questions ==
+
+= What about the Remove www? =
+
+If you host an enviroment that converts the url with or without www you can spare som chars to remove the www from the base urls of short media files.
+
 == Changelog ==
+
+= 1.1 =
+* Small bugfixes
+* Readme and screenshot updates
 
 = 1.0 =
 * A fresh start
