@@ -14,9 +14,7 @@ You can set your own unique tag-url to the media files and the MediaShort will l
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
+How to install the plugin and get it working.
 
 1. Upload `mediashort` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress

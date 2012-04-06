@@ -1,4 +1,3 @@
-#@ mediashort
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -19,4 +18,54 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
+
+#: includes/ms_mediaview.class.php:43
+#@ mediashort
+msgid "MediaShort"
+msgstr "MediaShort"
+
+#: includes/ms_mediaview.class.php:50
+#@ mediashort
+msgid "Urls are equivalent and leads to this media as File URL!"
+msgstr "Adresserna leder alla till denna mediafil!"
+
+#: includes/ms_settings.class.php:34
+#@ mediashort
+msgid "MediaShort Settings"
+msgstr "MediaShort Inställningar"
+
+#: includes/ms_settings.class.php:36
+#@ mediashort
+msgid "Set tag URL and activate MediaShort. "
+msgstr "Välj tagg-URL och aktivera MediaShort"
+
+#: includes/ms_settings.class.php:59
+#@ mediashort
+msgid "MediaShort settings is updated!"
+msgstr "MediaShorts inställningar är nu uppdaterade!"
+
+#: includes/ms_settings.class.php:72
+#@ mediashort
+msgid "Is active"
+msgstr "Aktiv"
+
+#: includes/ms_settings.class.php:82
+#@ mediashort
+msgid "Remove www from url"
+msgstr "Ta bort www från URL"
+
+#: includes/ms_settings.class.php:92
+#@ mediashort
+msgid "Short URL tag"
+msgstr "Kort URL-tagg"
+
+#: includes/ms_settings.class.php:94
+#@ mediashort
+msgid "(This will change the old MediaShort URLs!)"
+msgstr "(Detta kommer att ändra samtliga korta adresser!)"
+
+#: includes/ms_settings.class.php:100
+#@ mediashort
+msgid "Save Changes"
+msgstr "Spara"
 
