@@ -29,7 +29,8 @@ If you host an enviroment that converts the url with or without www you can spar
 
 == Screenshots ==
 
-1. Option page to choose the tag url as /%tag%/
+Screenshots
+1. Option page to choose the tag url/name as http://yourblogurl/tagname/post-id/, Eg http://www.dn.se/m/123123
 2. Edit the file and you get some alternative short media urls to copy, click the one you like andcopy with standard CTRL+C or CMD+C
 3. Now test the file in your browser
 4. The redirect is complete!
