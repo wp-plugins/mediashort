@@ -25,8 +25,6 @@ How to install the plugin and get it working.
 4. Make sure your site supports redirects as standard permalinks via .htaccess
 
 == Screenshots ==
-
-Screenshots
 1. Option page to choose the tag url/name as http://yourblogurl/tagname/post-id/, Eg http://www.dn.se/m/123123
 2. Edit the file and you get some alternative short media urls to copy, click the one you like andcopy with standard CTRL+C or CMD+C
 3. Now test the file in your browser
