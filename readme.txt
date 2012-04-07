@@ -2,7 +2,7 @@
 Contributors: EkAndreas
 Tags: media, short url, wp-admin
 Requires at least: 3.1
-Tested up to: 3.2
+Tested up to: 3.3.1
 Stable tag: 1.2
 
 Gives a shorter url to media links in your media library.
