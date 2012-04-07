@@ -19,53 +19,118 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: includes/ms_mediaview.class.php:43
-#@ mediashort
-msgid "MediaShort"
-msgstr "MediaShort"
-
-#: includes/ms_mediaview.class.php:50
-#@ mediashort
-msgid "Urls are equivalent and leads to this media as File URL!"
-msgstr "Adresserna leder alla till denna mediafil!"
-
-#: includes/ms_settings.class.php:34
+#: includes/ms_settings.class.php:50
 #@ mediashort
 msgid "MediaShort Settings"
 msgstr "MediaShort Inställningar"
 
-#: includes/ms_settings.class.php:36
+#: includes/ms_settings.class.php:52
 #@ mediashort
 msgid "Set tag URL and activate MediaShort. "
 msgstr "Välj tagg-URL och aktivera MediaShort"
 
-#: includes/ms_settings.class.php:59
+#: includes/ms_settings.class.php:81
 #@ mediashort
 msgid "MediaShort settings is updated!"
 msgstr "MediaShorts inställningar är nu uppdaterade!"
 
-#: includes/ms_settings.class.php:72
+#: includes/ms_settings.class.php:116
 #@ mediashort
 msgid "Is active"
 msgstr "Aktiv"
 
-#: includes/ms_settings.class.php:82
-#@ mediashort
-msgid "Remove www from url"
-msgstr "Ta bort www från URL"
-
-#: includes/ms_settings.class.php:92
+#: includes/ms_settings.class.php:132
 #@ mediashort
 msgid "Short URL tag"
 msgstr "Kort URL-tagg"
 
-#: includes/ms_settings.class.php:94
+#: includes/ms_settings.class.php:134
 #@ mediashort
 msgid "(This will change the old MediaShort URLs!)"
 msgstr "(Detta kommer att ändra samtliga korta adresser!)"
 
-#: includes/ms_settings.class.php:100
+#: includes/ms_settings.class.php:157
 #@ mediashort
 msgid "Save Changes"
 msgstr "Spara"
+
+#: includes/ms_mediaview.class.php:42
+#@ mediashort
+msgid "Alternative URL 1"
+msgstr "Alternativ URL 1"
+
+#: includes/ms_mediaview.class.php:51
+#@ mediashort
+msgid "Alternative URL 2"
+msgstr "Alternativ URL 2"
+
+#: includes/ms_mediaview.class.php:60
+#@ mediashort
+msgid "Alternative URL 3"
+msgstr "Alternativ URL 3"
+
+#: includes/ms_mediaview.class.php:69
+#@ mediashort
+msgid "Alternative URL 4"
+msgstr "Alternativ URL 4"
+
+#: includes/ms_mediaview.class.php:82
+#@ mediashort
+msgid "Use MediaShort-URLs as an attachment and force browser download"
+msgstr "Använd MediaShort-URL som nedladdning och tvinga webbläsaren att ladda ner som fil"
+
+#: includes/ms_settings.class.php:126
+#@ mediashort
+msgid "Base URL replacement"
+msgstr "Bas-URL, byt ut till"
+
+#: includes/ms_settings.class.php:128
+#@ mediashort
+msgid "(In case of use duplicate url address, eg http://amek.se instead of base url http://www.amek.se)"
+msgstr "(Om dubbel address finns, ex http://amek.se istället för standard http://www.amek.se)"
+
+#: includes/ms_settings.class.php:138
+#@ mediashort
+msgid "Transfer mode"
+msgstr "Överföringsval"
+
+#: includes/ms_settings.class.php:140
+#@ mediashort
+msgid "Redirect (force download as attachment will not work)"
+msgstr "Ompekning (tvingad nedladdning som fil kommer inte att fungera)"
+
+#: includes/ms_settings.class.php:141
+#@ mediashort
+msgid "Rewrite the url and transfer content"
+msgstr "Omskrivning av URL"
+
+#: includes/ms_settings.class.php:142
+#@ mediashort
+msgid "Use cURL"
+msgstr "Använd cURL"
+
+#: includes/ms_settings.class.php:146
+#@ mediashort
+msgid "Show link type in media dialog"
+msgstr "Visa olika länktyper i mediadialogen"
+
+#: includes/ms_settings.class.php:148
+#@ mediashort
+msgid "Alternative URL 1: Shortest possible"
+msgstr "Alternativ URL 1: Kortast möjligast"
+
+#: includes/ms_settings.class.php:149
+#@ mediashort
+msgid "Alternative URL 2: Short with filename extention"
+msgstr "Alternativ URL 2: Kort med filändelsen"
+
+#: includes/ms_settings.class.php:150
+#@ mediashort
+msgid "Alternative URL 3: The filename"
+msgstr "Alternativ URL 3: Filnamnet"
+
+#: includes/ms_settings.class.php:151
+#@ mediashort
+msgid "Alternative URL 4: The filename and extention"
+msgstr "Alternativ URL 4: Filnamnet och filändelsen"
 
