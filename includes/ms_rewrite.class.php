@@ -15,12 +15,9 @@ class MediaShort_Rewrite{
 
     function ms_rewrite_rules( $wp_rewrite )
     {
-        $mediashort_settings = get_option( 'mediashort-settings', '');
-        $active = $mediashort_settings['active'];
-        $tag = empty($mediashort_settings['tag']) ? 'ms' : $mediashort_settings['tag'];
-
-        if ($active){
-            $new_rules = array( $tag.'/(.+?)/?$' => 'index.php?mediashort='.$wp_rewrite->preg_index(1) );
+        $settings = new MediaShort_Settings();
+        if ($settings->active){
+            $new_rules = array( $settings->tag.'/(.+?)/?$' => 'index.php?mediashort='.$wp_rewrite->preg_index(1) );
             $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
         }
     }
@@ -35,7 +32,56 @@ class MediaShort_Rewrite{
         if (array_key_exists('mediashort', $wp->query_vars))
         {
             $id = $wp->query_vars['mediashort'];
-            wp_redirect(wp_get_attachment_url($id));
+            $post = get_post($id);
+
+            $attachment = (int)get_post_meta($id, '_mediashort_attachment',true);
+
+            $settings = new MediaShort_Settings();
+
+            if ($settings->transfer=='file'){
+
+                header('Content-Type: ' . $post->post_mime_type);
+                header('Content-Transfer-Encoding: binary');
+                header('Expires: 0');
+                header('Cache-Control: must-revalidate');
+                header('Pragma: public');
+                header('Content-Length: ' . getimagesize($post->guid));
+                header('Content-Description: File Transfer');
+
+                if ($attachment){
+                    header('Content-Disposition: attachment; filename='.basename($post->post_name));
+                }
+
+                readfile($post->guid);
+
+            }
+            else if ($settings->transfer=='curl'){
+
+                header('Content-Type: ' . $post->post_mime_type);
+                header('Content-Transfer-Encoding: binary');
+                header('Expires: 0');
+                header('Cache-Control: must-revalidate');
+                header('Pragma: public');
+                header('Content-Length: ' . getimagesize($post->guid));
+                header('Content-Description: File Transfer');
+
+                if ($attachment){
+                    header('Content-Disposition: attachment; filename='.basename($post->post_name));
+                }
+
+                ob_clean();
+                flush();
+
+                $c = curl_init();
+                curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($c, CURLOPT_URL, $post->guid);
+                $contents = curl_exec($c);
+                curl_close($c);
+                echo $contents;
+            }
+            else{
+                wp_redirect($post->guid);
+            }
             exit;
         }
     }

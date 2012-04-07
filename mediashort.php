@@ -3,7 +3,7 @@
 Plugin Name: MediaShort
 Plugin URI: http://wordpress.org/extend/plugins/medaishort/
 Description: Adds a shorter url to media files in WordPress via WP-admin
-Version: 1.1
+Version: 1.2
 Author: EkAndreas, Hypernode AB
 Author URI: http://hypernode.se
 License: GPLv2
