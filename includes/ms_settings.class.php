@@ -100,7 +100,8 @@ class MediaShort_Settings{
 
             if (sizeof($posts_array)>0){
                 $post_id = $posts_array[0]->ID;
-                $post = get_post($posts_id);
+                $post = get_post($post_id);
+                $filename = $post->post_name;
                 $ext_start = strrpos($post->guid,'.');
                 if ($ext_start>0){
                     $ext = substr($post->guid, $ext_start);
